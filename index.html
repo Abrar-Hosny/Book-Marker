@@ -1,7 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<body lang="en">
   <head>
-    <meta charset="utf-8" />
     <title>Bookmark</title>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" type="image/x-icon" href="images/bookmark_12461408.png">
@@ -9,13 +8,13 @@
     <link href="../CSS/all.min.css" rel="stylesheet" />
     <link href="../CSS/style.css" rel="stylesheet" />
   </head>
-  <body class=bg-black>
+  <body>
     <section>
       
       <div class="d-flex justify-content-center mt-5">
-        <i class="fa-regular fa-bookmark m-2 fa-xl" style="color: white"></i>
+        <i class="fa-regular fa-bookmark m-2 fa-xl" style="color: rgb(0, 0, 0)"></i>
         <h3 class="">Bookmark your favorite sites</h3>
-        <i class="fa-regular fa-bookmark m-2 fa-xl" style="color: white"></i>
+        <i class="fa-regular fa-bookmark m-2 fa-xl" style="color: rgb(0, 0, 0)"></i>
       </div>
       <div class="mt-5 header position-relative text-center ">
         <img src="images/book_3145765.png"  alt="book"  >
@@ -23,11 +22,11 @@
       <div id="form" class="mx-5 p-5">
           <div class=" d-flex flex-column">
             <label for="bookname" class=" form-label fw-bold mx-5 px-5">Site Name</label>
-            <input type="text" class="form-control fw-bold align-self-center " id="bookname" />
+            <input type="text" oninput="validation(this)" class="form-control fw-bold align-self-center " id="bookname" />
           </div>
           <div class="mb-3 mt-3 d-flex flex-column">
             <label for="Link" class="form-label fw-bold mx-5 px-5">Site Url</label>
-            <input type="text" class="form-control fw-bold align-self-center" id="Link" />
+            <input type="text" oninput="validation(this)" class="form-control fw-bold align-self-center" id="Link" />
           </div>
           <div class="d-flex justify-content-center">
             <button
@@ -41,7 +40,7 @@
     </section>
 
     <section >
-      <table class="table-bordered border-primary table-sm position-relative m-auto w-75">
+      <table class="table-bordered  table-sm position-relative m-auto w-75">
         <thead>
           <th class="text-secondary">Index</th>
           <th class="text-secondary">Name</th>
@@ -58,4 +57,4 @@
     <script src="JS/bootstrap.min.js"></script>
     <script src="JS/index.js"></script>
   </body>
-</html>
+</body>

@@ -33,7 +33,7 @@ function display(){
 cartona+=`<tr>
           <td>${i+1}</td>
           <td>${bookList[i].name}</td>
-          <td><a class="btn  fw-bold ">Visit</a></td>
+          <td><a class="btn fw-bold" href="${bookList[i].link}" target="_blank">Visit</a></td>
           <td><a onclick="deleteBook(${i})" class="btn  fw-bold ">Delete</a></td>
           </tr>
        `
@@ -52,6 +52,28 @@ display();
 
 }
 
+function visit(visitedIndex){
+  
+
+}
+
+
+function validation(element){
+ var  regex = { 
+  bookname:/[A-z0-9a-z]{3,}/
+ , Link:/^(https?:\/\/)?((([a-z\d]([a-z\d-]*[a-z\d])*)\.)+[a-z]{2,}|((\d{1,3}\.){3}\d{1,3}))(\/[-a-z\d%_.~+]*)*(\?[;&a-z\d%_.~+=-]*)?(#[-a-z\d_]*)?$/i
+ }
+ if(regex[element.id].test(element.value)){
+element.classList.add("is-valid");
+element.classList.remove("is-invalid");
+ }
+else{
+element.classList.add("is-invalid");
+element.classList.remove("is-valid");
+
+}
+
+ }
 
 
 
