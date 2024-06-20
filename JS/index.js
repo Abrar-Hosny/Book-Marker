@@ -9,6 +9,7 @@ if(localStorage.getItem("books")==null){
 }
 else{
   bookList=JSON.parse(localStorage.getItem("books"));
+  display();
 }
 
 function addBook(){
