@@ -2,8 +2,14 @@ var bookName = document.getElementById("bookname");
 var bookLink = document.getElementById("Link");
 var displaybody = document.getElementById("displaybody");
 
-var bookList=[];
+var bookList;
 
+if(localStorage.getItem("books")==null){
+  bookList=[];
+}
+else{
+  bookList=JSON.parse(localStorage.getItem("books"));
+}
 
 function addBook(){
 bookNameValue = bookName.value; 
