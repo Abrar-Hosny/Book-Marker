@@ -15,6 +15,7 @@ function addBook(){
 bookNameValue = bookName.value; 
 bookLinkValue = bookLink.value ;
 bookList.push({name:bookNameValue , link : bookLinkValue});
+localStorage.setItem("books" , JSON.stringify(bookList));
 console.log(bookList) ;
 display();
 }
