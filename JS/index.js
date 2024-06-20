@@ -33,8 +33,9 @@ function display(){
 cartona+=`<tr>
           <td>${i+1}</td>
           <td>${bookList[i].name}</td>
-          <td><a class="btn fw-bold" href="${bookList[i].link}" target="_blank">Visit</a></td>
-          <td><a onclick="deleteBook(${i})" class="btn  fw-bold ">Delete</a></td>
+          <td><a class="btn btn-success" href="${bookList[i].link}" target="_blank"><i class="fa-solid fa-eye"></i> Visit</a></td>
+          
+          <td><a onclick="deleteBook(${i})" class="btn btn-danger"><i class="fa-solid fa-trash"></i> Delete</a></td>
           </tr>
        `
   }
