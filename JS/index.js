@@ -1,6 +1,6 @@
 var bookName = document.getElementById("bookname");
 var bookLink = document.getElementById("Link");
-var displaySec = document.getElementById("displaySection");
+var displaybody = document.getElementById("displaybody");
 
 var bookList=[];
 
@@ -17,26 +17,16 @@ display();
 function display(){
   var cartona;
   for(var i =0 ; i<bookList.length ; i++){
-cartona+=` <table class="table-bordered table-sm position-relative m-auto w-75">
-        <thead>
-          <th>Index</th>
-          <th>Name</th>
-          <th>Visit</th>
-          <th>Delete</th>
-        </thead>
-        <tbody>
-          <tr>
+cartona+=`<tr>
           <td>${i+1}</td>
           <td>${bookList[i].name}</td>
           <td><a class="btn  fw-bold ">Visit</a></td>
           <td><a  class="btn  fw-bold ">Delete</a></td>
-          
           </tr>
-        </tbody>
-      </table>`
+       `
   }
 
-displaySec.innerHTML=cartona ; 
+displaybody.innerHTML=cartona ; 
 
 }
 
