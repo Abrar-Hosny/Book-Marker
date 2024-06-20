@@ -1,5 +1,5 @@
 :root{
-    --main-color:rgb(7, 7, 141)
+    --main-color:white
 }
 
 
@@ -15,5 +15,34 @@ border: solid black 1px;
 }
 
 
+img{
+width: 6%;
+}
+
+section  #form input{
+    background-color: rgb(214, 214, 214);
+}
+
+
+@media screen and (min-width:640px) {
+    section #form input{
+        width: 80%;
+        
+    }
+}
+
+
+@media screen and  (min-width:789px) {
+    section #form input{
+        width: 80%;
+    }
+}
+
+
+@media screen and (min-width:1024x){
+    section #form input{
+        width: 80%;
+    }
+}
 
 

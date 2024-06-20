@@ -2,6 +2,7 @@ var bookName = document.getElementById("bookname");
 var bookLink = document.getElementById("Link");
 var displaybody = document.getElementById("displaybody");
 
+
 var bookList;
 
 if(localStorage.getItem("books")==null){
@@ -15,6 +16,10 @@ else{
 function addBook(){
 bookNameValue = bookName.value; 
 bookLinkValue = bookLink.value ;
+if(bookNameValue == null || bookLinkValue==null ){
+ 
+}
+
 bookList.push({name:bookNameValue , link : bookLinkValue});
 localStorage.setItem("books" , JSON.stringify(bookList));
 console.log(bookList) ;
