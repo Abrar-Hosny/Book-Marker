@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../CSS/all.min.css" rel="stylesheet" />
+    <link href="../CSS/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <section>
+      <div class="mt-5 mb-5 header position-relative">
+        <h1 class="text-center text-black fw-bolder">Bookmark</h1>
+      </div>
+      <div class="d-flex justify-content-center">
+        <i class="fa-regular fa-bookmark m-2 fa-xl" style="color: #000000"></i>
+        <h3 class="">Bookmark your favorite sites</h3>
+        <i class="fa-regular fa-bookmark m-2 fa-xl" style="color: #000000"></i>
+      </div>
+      <div id="form" class="mx-5 p-5">
+          <div class="mb-3">
+            <label for="bookname" class="form-label fw-bold">Site Name</label>
+            <input type="text" class="form-control" id="bookname" />
+          </div>
+          <div class="mb-3">
+            <label for="Link" class="form-label fw-bold">Site Url</label>
+            <input type="text" class="form-control" id="Link" />
+          </div>
+          <div class="mx-auto w-25">
+            <button
+              onclick="addBook()"
+              class="btn px-4 py-2 border border-2 border-black fw-bold"
+            >
+              Submit
+            </button>
+          </div>
+      </div>
+    </section>
+
+    <section id="displaySection">
+     
+    </section>
+    <script src="JS/bootstrap.min.js"></script>
+    <script src="JS/index.js"></script>
+  </body>
+</html>
